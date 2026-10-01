@@ -1,0 +1,52 @@
+{
+  "username": "Snow-Warrior07",
+  "name": "Abhitesh Shukla",
+  "subtitle": "Robotics · Control Systems · Computer Vision",
+  "focus": "intelligent machines · high-resolution vision · reproducible experiments",
+  "links": [
+    { "label": "GITHUB", "url": "https://github.com/Snow-Warrior07" },
+    { "label": "PROJECTS", "url": "https://github.com/Snow-Warrior07?tab=repositories" },
+    { "label": "ACTIVITY", "url": "https://github.com/Snow-Warrior07?tab=overview" }
+  ],
+  "projects": [
+    {
+      "repo": "traction-aware-amr",
+      "title": "TRACTION-AWARE AMR",
+      "category": "ROBOTICS / CONTROL",
+      "summary": [
+        "A virtual warehouse rover with friction-limited dynamics,",
+        "linear and nonlinear tracking, and traction supervision.",
+        "ROS 2 integration, a Pico carrier PCB, and reproducible tests."
+      ],
+      "stack": "PYTHON · C++ · ROS 2 · GAZEBO · KICAD",
+      "detail": "4 controller variants · 540-run experiment matrix",
+      "url": "https://github.com/Snow-Warrior07/traction-aware-amr"
+    },
+    {
+      "repo": "Satellite_based_tile_segmentation",
+      "title": "SATELLITE TILE SEGMENTATION",
+      "category": "REMOTE SENSING / DEEP LEARNING",
+      "summary": [
+        "Pixel-wise segmentation of high-resolution aerial imagery",
+        "with a residual U-Net and a dilated bottleneck.",
+        "Patch extraction, test-time augmentation, and tile reconstruction."
+      ],
+      "stack": "PYTHON · TENSORFLOW · KERAS · JUPYTER",
+      "detail": "6000 × 6000 imagery · 6 semantic classes",
+      "url": "https://github.com/Snow-Warrior07/Satellite_based_tile_segmentation"
+    },
+    {
+      "repo": "VAE-Triage",
+      "title": "VQ-VAE PATHOLOGY TRIAGE",
+      "category": "REPRESENTATION LEARNING / IMAGE QC",
+      "summary": [
+        "A preprocessing gate for gigapixel pathology imagery.",
+        "Memory-mapped tiling and VQ-VAE reconstruction error",
+        "screen patches before expensive downstream segmentation."
+      ],
+      "stack": "PYTHON · PYTORCH · VQ-VAE · ONNX",
+      "detail": "Tiling → reconstruction → quality control → export",
+      "url": "https://github.com/Snow-Warrior07/VAE-Triage"
+    }
+  ]
+}
