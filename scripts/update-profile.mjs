@@ -299,6 +299,8 @@ const readme = `<!-- Generated from profile.json and verified public GitHub data
   ${navigation}
 </div>
 
+${config.projects.filter(project => project.demo).map(project => `**Latest project: [${project.title}](${project.url})** · [Live demo](${project.demo}) · [Phase results](${project.evidence})`).join('\n')}
+
 ${picture('s01', '01 — whoami')}
 ${picture('whoami', 'About Abhitesh: robotics, control systems, computer vision, and representation learning')}
 
@@ -306,7 +308,7 @@ ${picture('s02', '02 — system map')}
 ${picture('ecosystem', 'Project ecosystem: autonomous systems, satellite vision, and VQ-VAE representations')}
 
 ${picture('s03', '03 — projects')}
-${config.projects.map((project, i) => `<a href="${project.url}">${picture(`project-0${i + 1}`, `${project.title}: ${project.summary.join(' ')}`)}</a>`).join('\n\n')}
+${config.projects.map((project, i) => `<a href="${project.url}">${picture(`project-0${i + 1}`, `${project.title}: ${project.summary.join(' ')}`)}</a>${project.demo ? `\n\n[Live demo](${project.demo}) · [Phase results](${project.evidence})` : ''}`).join('\n\n')}
 <p align="center"><a href="https://github.com/${config.username}?tab=repositories">Explore all repositories ↗</a></p>
 
 ${picture('s04', '04 — telemetry')}

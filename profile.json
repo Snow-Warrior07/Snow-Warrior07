@@ -47,6 +47,21 @@
       "stack": "PYTHON · PYTORCH · VQ-VAE · ONNX",
       "detail": "Tiling → reconstruction → quality control → export",
       "url": "https://github.com/Snow-Warrior07/VAE-Triage"
+    },
+    {
+      "repo": "supplyshield",
+      "title": "SUPPLYSHIELD",
+      "category": "DECISION SYSTEMS / SUPPLY CHAIN",
+      "summary": [
+        "Supplier disruption planning with constrained recovery decisions.",
+        "Compare sourcing policies; verify inventory, capacity and budget.",
+        "Daily planning and fixed-purchase stress tests on synthetic data."
+      ],
+      "stack": "PYTHON · SQL · OR-TOOLS · STREAMLIT · FASTAPI",
+      "detail": "24 synthetic scenarios · 72 verified plans · live decision lab",
+      "url": "https://github.com/Snow-Warrior07/supplyshield",
+      "demo": "https://snow-warrior07.github.io/supplyshield/",
+      "evidence": "https://github.com/Snow-Warrior07/supplyshield/blob/main/planning/phase-results.md"
     }
   ]
 }

@@ -6,6 +6,8 @@
   <a href="https://github.com/Snow-Warrior07?tab=overview"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/link-activity.svg"><img src="assets/link-activity.svg" width="105" alt="ACTIVITY"></picture></a>
 </div>
 
+**Latest project: [SUPPLYSHIELD](https://github.com/Snow-Warrior07/supplyshield)** · [Live demo](https://snow-warrior07.github.io/supplyshield/) · [Phase results](https://github.com/Snow-Warrior07/supplyshield/blob/main/planning/phase-results.md)
+
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/s01.svg"><img src="assets/s01.svg" width="100%" alt="01 — whoami"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/whoami.svg"><img src="assets/whoami.svg" width="100%" alt="About Abhitesh: robotics, control systems, computer vision, and representation learning"></picture>
 
@@ -18,6 +20,10 @@
 <a href="https://github.com/Snow-Warrior07/Satellite_based_tile_segmentation"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/project-02.svg"><img src="assets/project-02.svg" width="100%" alt="SATELLITE TILE SEGMENTATION: Pixel-wise segmentation of high-resolution aerial imagery with a residual U-Net and a dilated bottleneck. Patch extraction, test-time augmentation, and tile reconstruction."></picture></a>
 
 <a href="https://github.com/Snow-Warrior07/VAE-Triage"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/project-03.svg"><img src="assets/project-03.svg" width="100%" alt="VQ-VAE PATHOLOGY TRIAGE: A preprocessing gate for gigapixel pathology imagery. Memory-mapped tiling and VQ-VAE reconstruction error screen patches before expensive downstream segmentation."></picture></a>
+
+<a href="https://github.com/Snow-Warrior07/supplyshield"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/project-04.svg"><img src="assets/project-04.svg" width="100%" alt="SUPPLYSHIELD: Supplier disruption planning with constrained recovery decisions. Compare sourcing policies; verify inventory, capacity and budget. Daily planning and fixed-purchase stress tests on synthetic data."></picture></a>
+
+[Live demo](https://snow-warrior07.github.io/supplyshield/) · [Phase results](https://github.com/Snow-Warrior07/supplyshield/blob/main/planning/phase-results.md)
 <p align="center"><a href="https://github.com/Snow-Warrior07?tab=repositories">Explore all repositories ↗</a></p>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/s04.svg"><img src="assets/s04.svg" width="100%" alt="04 — telemetry"></picture>
@@ -46,6 +52,8 @@ I build autonomous-system simulations and learning pipelines for high-resolution
   PYTHON · TENSORFLOW · KERAS · JUPYTER
 - [VQ-VAE PATHOLOGY TRIAGE](https://github.com/Snow-Warrior07/VAE-Triage) — A preprocessing gate for gigapixel pathology imagery. Memory-mapped tiling and VQ-VAE reconstruction error screen patches before expensive downstream segmentation.
   PYTHON · PYTORCH · VQ-VAE · ONNX
+- [SUPPLYSHIELD](https://github.com/Snow-Warrior07/supplyshield) — Supplier disruption planning with constrained recovery decisions. Compare sourcing policies; verify inventory, capacity and budget. Daily planning and fixed-purchase stress tests on synthetic data.
+  PYTHON · SQL · OR-TOOLS · STREAMLIT · FASTAPI
 
 The timeline records public repository milestones. Statistics refresh daily from GitHub. Animated graphics respect reduced-motion preferences.
 
