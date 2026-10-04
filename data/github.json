@@ -1,6 +1,6 @@
 {
   "username": "Snow-Warrior07",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "joined": "2025-02-02",
   "publicRepos": 7,
   "followers": 0,
@@ -8,40 +8,13 @@
   "projects": 4,
   "totalContributions": 25,
   "languages": {
-    "Python": 204895,
+    "Python": 275643,
+    "JavaScript": 11158,
+    "Dockerfile": 233,
     "HTML": 13891,
-    "JavaScript": 9895,
     "C++": 2598
   },
   "calendar": [
-    {
-      "date": "2025-09-28",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-09-29",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-09-30",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-10-01",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-10-02",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-10-03",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-10-04",
-      "contributionCount": 0
-    },
     {
       "date": "2025-10-05",
       "contributionCount": 0
@@ -1497,6 +1470,10 @@
     {
       "date": "2026-10-03",
       "contributionCount": 8
+    },
+    {
+      "date": "2026-10-04",
+      "contributionCount": 0
     }
   ],
   "repos": [
