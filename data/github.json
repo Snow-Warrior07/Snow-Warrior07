@@ -1,6 +1,6 @@
 {
   "username": "Snow-Warrior07",
-  "updated": "2026-10-10",
+  "updated": "2026-10-11",
   "joined": "2025-02-02",
   "publicRepos": 8,
   "followers": 0,
@@ -15,34 +15,6 @@
     "Dockerfile": 233
   },
   "calendar": [
-    {
-      "date": "2025-10-05",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-10-06",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-10-07",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-10-08",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-10-09",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-10-10",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-10-11",
-      "contributionCount": 0
-    },
     {
       "date": "2025-10-12",
       "contributionCount": 0
@@ -1497,6 +1469,10 @@
     },
     {
       "date": "2026-10-10",
+      "contributionCount": 0
+    },
+    {
+      "date": "2026-10-11",
       "contributionCount": 0
     }
   ],
