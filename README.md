@@ -1,18 +1,18 @@
 <!-- Generated from profile.json and verified public GitHub data. -->
 <div align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/header.svg"><img src="assets/header.svg" width="100%" alt="Abhitesh Shukla — Robotics · Control Systems · Computer Vision"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/header.svg"><img src="assets/header.svg" width="100%" alt="Abhitesh Shukla — Mixed-signal Design · Control Systems · Computer Vision"></picture>
   <a href="https://github.com/Snow-Warrior07"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/link-github.svg"><img src="assets/link-github.svg" width="105" alt="GITHUB"></picture></a>
   <a href="https://github.com/Snow-Warrior07?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/link-projects.svg"><img src="assets/link-projects.svg" width="105" alt="PROJECTS"></picture></a>
   <a href="https://github.com/Snow-Warrior07?tab=overview"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/link-activity.svg"><img src="assets/link-activity.svg" width="105" alt="ACTIVITY"></picture></a>
 </div>
 
-**Latest project: [SUPPLYSHIELD](https://github.com/Snow-Warrior07/supplyshield)** · [Live demo](https://snow-warrior07.github.io/supplyshield/) · [Phase results](https://github.com/Snow-Warrior07/supplyshield/blob/main/planning/phase-results.md)
+**Latest project: [8-BIT SAR ADC](https://github.com/Snow-Warrior07/sar-adc-8bit)** · [Engineering evidence](https://github.com/Snow-Warrior07/sar-adc-8bit/blob/main/report/engineering-report.md)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/s01.svg"><img src="assets/s01.svg" width="100%" alt="01 — whoami"></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/whoami.svg"><img src="assets/whoami.svg" width="100%" alt="About Abhitesh: robotics, control systems, computer vision, and representation learning"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/whoami.svg"><img src="assets/whoami.svg" width="100%" alt="About Abhitesh: mixed-signal design, verified RTL, control systems and computer vision"></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/s02.svg"><img src="assets/s02.svg" width="100%" alt="02 — system map"></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/ecosystem.svg"><img src="assets/ecosystem.svg" width="100%" alt="Project ecosystem: autonomous systems, satellite vision, and VQ-VAE representations"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/ecosystem.svg"><img src="assets/ecosystem.svg" width="100%" alt="Project ecosystem: SAR conversion, autonomous systems and visual learning"></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/s03.svg"><img src="assets/s03.svg" width="100%" alt="03 — projects"></picture>
 <a href="https://github.com/Snow-Warrior07/traction-aware-amr"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/project-01.svg"><img src="assets/project-01.svg" width="100%" alt="TRACTION-AWARE AMR: A virtual warehouse rover with friction-limited dynamics, linear and nonlinear tracking, and traction supervision. ROS 2 integration, a Pico carrier PCB, and reproducible tests."></picture></a>
@@ -24,6 +24,8 @@
 <a href="https://github.com/Snow-Warrior07/supplyshield"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/project-04.svg"><img src="assets/project-04.svg" width="100%" alt="SUPPLYSHIELD: Supplier disruption planning with constrained recovery decisions. Compare sourcing policies; verify inventory, capacity and budget. Daily planning and fixed-purchase stress tests on synthetic data."></picture></a>
 
 [Live demo](https://snow-warrior07.github.io/supplyshield/) · [Phase results](https://github.com/Snow-Warrior07/supplyshield/blob/main/planning/phase-results.md)
+
+<a href="https://github.com/Snow-Warrior07/sar-adc-8bit"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/project-05.svg"><img src="assets/project-05.svg" width="100%" alt="8-BIT SAR ADC: Differential SAR conversion with a verified RTL controller. Online SKY130 circuit tests and a calibrated analog model. Static linearity, coherent FFTs and mapped digital timing."></picture></a>
 <p align="center"><a href="https://github.com/Snow-Warrior07?tab=repositories">Explore all repositories ↗</a></p>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/s04.svg"><img src="assets/s04.svg" width="100%" alt="04 — telemetry"></picture>
@@ -42,9 +44,9 @@
 <details>
 <summary>Text version · project index</summary>
 
-**Abhitesh Shukla** — Robotics · Control Systems · Computer Vision.
+**Abhitesh Shukla** — Mixed-signal Design · Control Systems · Computer Vision.
 
-I build autonomous-system simulations and learning pipelines for high-resolution imagery.
+I build mixed-signal models, verified RTL, autonomous-system simulations and learning pipelines.
 
 - [TRACTION-AWARE AMR](https://github.com/Snow-Warrior07/traction-aware-amr) — A virtual warehouse rover with friction-limited dynamics, linear and nonlinear tracking, and traction supervision. ROS 2 integration, a Pico carrier PCB, and reproducible tests.
   PYTHON · C++ · ROS 2 · GAZEBO · KICAD
@@ -54,6 +56,8 @@ I build autonomous-system simulations and learning pipelines for high-resolution
   PYTHON · PYTORCH · VQ-VAE · ONNX
 - [SUPPLYSHIELD](https://github.com/Snow-Warrior07/supplyshield) — Supplier disruption planning with constrained recovery decisions. Compare sourcing policies; verify inventory, capacity and budget. Daily planning and fixed-purchase stress tests on synthetic data.
   PYTHON · SQL · OR-TOOLS · STREAMLIT · FASTAPI
+- [8-BIT SAR ADC](https://github.com/Snow-Warrior07/sar-adc-8bit) — Differential SAR conversion with a verified RTL controller. Online SKY130 circuit tests and a calibrated analog model. Static linearity, coherent FFTs and mapped digital timing.
+  SYSTEMVERILOG · PYTHON · NGSPICE · SKY130 · YOSYS
 
 The timeline records public repository milestones. Statistics refresh daily from GitHub. Animated graphics respect reduced-motion preferences.
 

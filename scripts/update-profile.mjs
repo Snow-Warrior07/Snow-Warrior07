@@ -116,7 +116,7 @@ for (const [theme, c] of Object.entries(themes)) {
     text(48, 214, config.subtitle, 19) + mono(48, 277, 'FOCUS ▸', 11) + text(150, 277, config.focus, 13, c.muted) +
     text(48, 306, 'from models and signals to systems that move.', 14, c.muted) +
     line(48, 352, 952, 352, c.fg) +
-    mono(48, 383, 'AUTONOMOUS SYSTEMS', 11) + mono(360, 383, 'HIGH-RESOLUTION VISION', 11) + mono(952, 383, 'BUILD · TEST · ITERATE', 11, c.muted, 'text-anchor="end"'),
+    mono(48, 383, 'MIXED-SIGNAL DESIGN', 11) + mono(360, 383, 'CONTROL + VISION', 11) + mono(952, 383, 'BUILD · TEST · ITERATE', 11, c.muted, 'text-anchor="end"'),
     `${config.name}. ${config.subtitle}. ${config.focus}.`);
 
   for (const [index, label] of ['WHOAMI', 'SYSTEM MAP', 'PROJECTS', 'TELEMETRY', 'THE ROUTE', 'STACK'].entries()) {
@@ -128,23 +128,23 @@ for (const [theme, c] of Object.entries(themes)) {
   }
 
   await svg('whoami.svg', 250,
-    text(48, 34, 'I build at the intersection of intelligent machines and visual data.', 17) +
-    text(48, 66, 'Control loops for autonomous robots. Learning pipelines for large images.', 16) +
+    text(48, 34, 'I build circuits, control systems and learning pipelines.', 17) +
+    text(48, 66, 'Verified SAR logic. Online analog simulation. Reproducible experiments.', 16) +
     text(48, 100, 'The common thread: understand the model, test the assumptions, inspect the results.', 14, c.muted) +
     line(48, 130, 952, 130) +
-    mono(48, 168, 'FOCUS', 11) + text(180, 168, 'Robotics · control engineering · computer vision · representation learning', 14) +
-    mono(48, 202, 'BUILDING', 11) + text(180, 202, 'Traction-aware autonomy and efficient high-resolution image pipelines', 14) +
+    mono(48, 168, 'FOCUS', 11) + text(180, 168, 'Mixed-signal design · RTL verification · controls · computer vision', 14) +
+    mono(48, 202, 'BUILDING', 11) + text(180, 202, 'SAR conversion, traction-aware autonomy and visual learning', 14) +
     mono(48, 236, 'APPROACH', 11) + text(180, 236, 'Simulation · reproducible experiments · inspectable engineering', 14),
-    'About Abhitesh: robotics, control engineering, computer vision, and representation learning.');
+    'About Abhitesh: mixed-signal conversion, verified RTL, controls and computer vision.');
 
   let ecosystem = title('SYSTEM MAP — ONE ENGINEERING MINDSET', 'FIG. 01');
   ecosystem += panel(335, 70, 330, 95) + mono(500, 107, 'ABHITESH.SYS', 18, c.fg, 'text-anchor="middle"') + text(500, 137, 'model → build → measure', 13, c.muted, 'text-anchor="middle"');
   const centers = [190, 500, 810];
   ecosystem += line(500, 165, 500, 202) + line(190, 202, 810, 202);
   const nodes = [
+    ['MIXED-SIGNAL', '8-bit SAR ADC', 'charge + decisions', 'SystemVerilog + SKY130', 'online circuits + verification'],
     ['AUTONOMY', 'traction-aware-amr', 'motion + estimation', 'PI / LQR / nonlinear control', 'ROS 2 + simulation + PCB'],
-    ['VISION', 'satellite segmentation', 'pixels + context', 'Residual U-Net + dilations', 'patches + TTA + reconstruction'],
-    ['REPRESENTATIONS', 'VAE-Triage', 'compression + quality', 'VQ-VAE + anomaly scoring', 'memory-mapped tiles + ONNX']
+    ['VISION', 'segmentation + VQ-VAE', 'pixels + representation', 'Residual U-Net + VQ-VAE', 'tiling + learning + inference']
   ];
   nodes.forEach((node, i) => {
     const x = centers[i];
@@ -157,9 +157,14 @@ for (const [theme, c] of Object.entries(themes)) {
   ecosystem += line(190, 475, 810, 475) + line(500, 475, 500, 506, c.fg, 'class="flow"') +
     panel(250, 506, 500, 61) + mono(500, 543, 'SIMULATE · TRAIN · EVALUATE · REPEAT', 13, c.fg, 'text-anchor="middle"') +
     circle(292, 598, 3, c.fg, 'class="pulse"') + mono(310, 602, 'DASHED LINES — IDEAS IN MOTION', 10);
-  await svg('ecosystem.svg', 630, ecosystem, 'Three project tracks connect robotics, satellite vision, and VQ-VAE representation learning through reproducible experimentation.');
+  await svg('ecosystem.svg', 630, ecosystem, 'Mixed-signal conversion, robotics and computer vision connect through reproducible experimentation.');
 
   const glyph = (index, x, y) => {
+    if (index === 4) {
+      let pins = '';
+      for (let j = 0; j < 4; j++) pins += line(x - 8, y + 12 + j * 18, x + 8, y + 12 + j * 18, c.fg) + line(x + 80, y + 12 + j * 18, x + 96, y + 12 + j * 18, c.fg);
+      return panel(x + 8, y, 72, 82) + pins + mono(x + 44, y + 38, 'SAR', 13, c.fg, 'text-anchor="middle"') + text(x + 44, y + 60, '8 BIT', 12, c.muted, 'text-anchor="middle"');
+    }
     if (index === 0) return panel(x, y + 19, 80, 53) + circle(x + 13, y + 77, 9, c.bg, `stroke="${c.fg}"`) + circle(x + 67, y + 77, 9, c.bg, `stroke="${c.fg}"`) + line(x + 40, y + 19, x + 40, y) + circle(x + 40, y - 3, 5) + line(x + 16, y + 44, x + 28, y + 44, c.fg) + line(x + 52, y + 44, x + 64, y + 44, c.fg);
     if (index === 1) {
       let result = '';
@@ -184,7 +189,7 @@ for (const [theme, c] of Object.entries(themes)) {
     if (i < 3) telemetry += line(x + 208, 114, x + 232, 114, c.fg, 'class="flow"');
   });
   telemetry += line(48, 190, 952, 190) +
-    mono(48, 221, 'CURRENT FOCUS', 11) + text(48, 255, 'Traction-aware control', 18) + text(48, 284, 'and high-resolution learning.', 18) +
+    mono(48, 221, 'CURRENT FOCUS', 11) + text(48, 255, 'SAR conversion and verified RTL', 18) + text(48, 284, 'with control systems and learning.', 18) +
     mono(566, 221, 'FEEDBACK, ALWAYS', 11) +
     `<path d="M566 263 H620 L641 245 L660 278 L688 231 L712 285 L734 254 H765 L787 270 L811 242 L835 273 H952" fill="none" stroke="${c.fg}" stroke-width="2"/>` +
     circle(845, 273, 4, c.fg, 'class="pulse"') + rect(700, 233, 1, 57, c.line, 'class="scan"');
@@ -262,10 +267,10 @@ for (const [theme, c] of Object.entries(themes)) {
   await svg('approach.svg', 345, approach, 'Project-based engineering approach: model the dynamics, respect image scale, and inspect the learning pipeline.');
 
   const stackRows = [
-    ['LANGUAGES', 'Python · C++'],
+    ['LANGUAGES', 'Python · C++ · SystemVerilog'],
     ['LEARNING', 'PyTorch · TensorFlow · Keras · VQ-VAE · residual U-Net'],
     ['ROBOTICS', 'ROS 2 · Gazebo · PI / LQR · nonlinear tracking'],
-    ['HARDWARE', 'KiCad · ngspice · Raspberry Pi Pico carrier design'],
+    ['HARDWARE', 'KiCad · ngspice · SKY130 · Yosys · OpenSTA'],
     ['COMPUTE', 'NumPy · memory-mapped tiling · ONNX · Jupyter'],
     ['TOOLING', 'Git · GitHub Actions · pytest · reproducible experiments']
   ];
@@ -275,12 +280,12 @@ for (const [theme, c] of Object.entries(themes)) {
     stack += mono(48, y, label, 11) + text(195, y, value, 15);
     if (i < stackRows.length - 1) stack += line(48, y + 19, 952, y + 19, c.faint);
   });
-  await svg('stack.svg', 295, stack, 'Technologies evidenced in the three featured repositories: Python, C++, PyTorch, TensorFlow, Keras, ROS 2, Gazebo, KiCad, ngspice, NumPy, ONNX, Jupyter, GitHub Actions, and pytest.');
+  await svg('stack.svg', 295, stack, 'Technologies evidenced in the featured repositories: Python, C++, SystemVerilog, SKY130, Yosys, OpenSTA, PyTorch, TensorFlow, ROS 2, KiCad, ngspice, NumPy, ONNX, GitHub Actions and pytest.');
 
   await svg('footer.svg', 165,
     line(48, 34, 952, 34, c.fg) + circle(55, 80, 4, c.fg, 'class="pulse"') + mono(74, 84, 'STATUS — BUILDING, TESTING, ITERATING', 11, c.fg) +
     text(48, 118, 'Models become useful when they meet the world.', 14, c.muted) + mono(952, 118, '@SNOW-WARRIOR07', 10, c.muted, 'text-anchor="end"') +
-    mono(48, 151, 'ROBOTICS / CONTROL / VISION', 9, c.dim) + mono(952, 151, 'END OF FILE ↗', 9, c.dim, 'text-anchor="end"'),
+    mono(48, 151, 'MIXED-SIGNAL / CONTROL / VISION', 9, c.dim) + mono(952, 151, 'END OF FILE ↗', 9, c.dim, 'text-anchor="end"'),
     'Status: building, testing, iterating. Abhitesh Shukla, Snow-Warrior07.');
 
   for (const link of config.links) {
@@ -299,13 +304,13 @@ const readme = `<!-- Generated from profile.json and verified public GitHub data
   ${navigation}
 </div>
 
-${config.projects.filter(project => project.demo).map(project => `**Latest project: [${project.title}](${project.url})** · [Live demo](${project.demo}) · [Phase results](${project.evidence})`).join('\n')}
+${config.projects.filter(project => project.latest || (!config.projects.some(item => item.latest) && project.demo)).map(project => `**Latest project: [${project.title}](${project.url})** · [Engineering evidence](${project.evidence || project.url})`).join('\n')}
 
 ${picture('s01', '01 — whoami')}
-${picture('whoami', 'About Abhitesh: robotics, control systems, computer vision, and representation learning')}
+${picture('whoami', 'About Abhitesh: mixed-signal design, verified RTL, control systems and computer vision')}
 
 ${picture('s02', '02 — system map')}
-${picture('ecosystem', 'Project ecosystem: autonomous systems, satellite vision, and VQ-VAE representations')}
+${picture('ecosystem', 'Project ecosystem: SAR conversion, autonomous systems and visual learning')}
 
 ${picture('s03', '03 — projects')}
 ${config.projects.map((project, i) => `<a href="${project.url}">${picture(`project-0${i + 1}`, `${project.title}: ${project.summary.join(' ')}`)}</a>${project.demo ? `\n\n[Live demo](${project.demo}) · [Phase results](${project.evidence})` : ''}`).join('\n\n')}
@@ -329,7 +334,7 @@ ${picture('footer', 'Current status: building, testing, iterating')}
 
 **${config.name}** — ${config.subtitle}.
 
-I build autonomous-system simulations and learning pipelines for high-resolution imagery.
+I build mixed-signal models, verified RTL, autonomous-system simulations and learning pipelines.
 
 ${config.projects.map(project => `- [${project.title}](${project.url}) — ${project.summary.join(' ')}\n  ${project.stack}`).join('\n')}
 

@@ -1,12 +1,21 @@
 {
   "username": "Snow-Warrior07",
   "name": "Abhitesh Shukla",
-  "subtitle": "Robotics · Control Systems · Computer Vision",
-  "focus": "intelligent machines · high-resolution vision · reproducible experiments",
+  "subtitle": "Mixed-signal Design · Control Systems · Computer Vision",
+  "focus": "SAR conversion · verified RTL · control systems · reproducible experiments",
   "links": [
-    { "label": "GITHUB", "url": "https://github.com/Snow-Warrior07" },
-    { "label": "PROJECTS", "url": "https://github.com/Snow-Warrior07?tab=repositories" },
-    { "label": "ACTIVITY", "url": "https://github.com/Snow-Warrior07?tab=overview" }
+    {
+      "label": "GITHUB",
+      "url": "https://github.com/Snow-Warrior07"
+    },
+    {
+      "label": "PROJECTS",
+      "url": "https://github.com/Snow-Warrior07?tab=repositories"
+    },
+    {
+      "label": "ACTIVITY",
+      "url": "https://github.com/Snow-Warrior07?tab=overview"
+    }
   ],
   "projects": [
     {
@@ -62,6 +71,21 @@
       "url": "https://github.com/Snow-Warrior07/supplyshield",
       "demo": "https://snow-warrior07.github.io/supplyshield/",
       "evidence": "https://github.com/Snow-Warrior07/supplyshield/blob/main/planning/phase-results.md"
+    },
+    {
+      "repo": "sar-adc-8bit",
+      "title": "8-BIT SAR ADC",
+      "category": "MIXED-SIGNAL / RTL",
+      "summary": [
+        "Differential SAR conversion with a verified RTL controller.",
+        "Online SKY130 circuit tests and a calibrated analog model.",
+        "Static linearity, coherent FFTs and mapped digital timing."
+      ],
+      "stack": "SYSTEMVERILOG · PYTHON · NGSPICE · SKY130 · YOSYS",
+      "detail": "8 bits · 100 kS/s model · 7.89 simulated ENOB",
+      "url": "https://github.com/Snow-Warrior07/sar-adc-8bit",
+      "evidence": "https://github.com/Snow-Warrior07/sar-adc-8bit/blob/main/report/engineering-report.md",
+      "latest": true
     }
   ]
 }
