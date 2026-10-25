@@ -1,6 +1,6 @@
 {
   "username": "Snow-Warrior07",
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "joined": "2025-02-02",
   "publicRepos": 9,
   "followers": 0,
@@ -13,39 +13,11 @@
     "SystemVerilog": 6216,
     "Tcl": 1320,
     "JavaScript": 20499,
+    "Dockerfile": 233,
     "HTML": 13891,
-    "C++": 2598,
-    "Dockerfile": 233
+    "C++": 2598
   },
   "calendar": [
-    {
-      "date": "2025-10-19",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-10-20",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-10-21",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-10-22",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-10-23",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-10-24",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-10-25",
-      "contributionCount": 0
-    },
     {
       "date": "2025-10-26",
       "contributionCount": 0
@@ -1500,6 +1472,10 @@
     },
     {
       "date": "2026-10-24",
+      "contributionCount": 0
+    },
+    {
+      "date": "2026-10-25",
       "contributionCount": 0
     }
   ],
