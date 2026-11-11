@@ -1,6 +1,6 @@
 {
   "username": "Snow-Warrior07",
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "joined": "2025-02-02",
   "publicRepos": 9,
   "followers": 0,
@@ -12,10 +12,10 @@
     "Verilog": 32524,
     "SystemVerilog": 6216,
     "Tcl": 1320,
-    "JavaScript": 20499,
-    "Dockerfile": 233,
     "HTML": 13891,
-    "C++": 2598
+    "JavaScript": 20499,
+    "C++": 2598,
+    "Dockerfile": 233
   },
   "calendar": [
     {
@@ -1484,6 +1484,10 @@
     },
     {
       "date": "2026-11-10",
+      "contributionCount": 0
+    },
+    {
+      "date": "2026-11-11",
       "contributionCount": 0
     }
   ],
