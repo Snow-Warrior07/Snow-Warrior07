@@ -1,53 +1,25 @@
 {
   "username": "Snow-Warrior07",
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "joined": "2025-02-02",
   "publicRepos": 10,
   "followers": 0,
   "stars": 0,
   "projects": 5,
-  "totalContributions": 51,
+  "totalContributions": 58,
   "languages": {
-    "TypeScript": 271118,
-    "CSS": 35949,
-    "JavaScript": 51341,
-    "HTML": 37436,
-    "Dockerfile": 1760,
     "Python": 369293,
     "Verilog": 32524,
     "SystemVerilog": 6216,
     "Tcl": 1320,
+    "TypeScript": 271118,
+    "HTML": 252085,
+    "JavaScript": 106510,
+    "CSS": 54606,
+    "Dockerfile": 1760,
     "C++": 2598
   },
   "calendar": [
-    {
-      "date": "2025-11-16",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-11-17",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-11-18",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-11-19",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-11-20",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-11-21",
-      "contributionCount": 0
-    },
-    {
-      "date": "2025-11-22",
-      "contributionCount": 0
-    },
     {
       "date": "2025-11-23",
       "contributionCount": 0
@@ -1498,11 +1470,15 @@
     },
     {
       "date": "2026-11-20",
-      "contributionCount": 2
+      "contributionCount": 5
     },
     {
       "date": "2026-11-21",
       "contributionCount": 0
+    },
+    {
+      "date": "2026-11-22",
+      "contributionCount": 4
     }
   ],
   "repos": [
