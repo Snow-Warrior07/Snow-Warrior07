@@ -1,22 +1,23 @@
 {
   "username": "Snow-Warrior07",
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "joined": "2025-02-02",
-  "publicRepos": 10,
+  "publicRepos": 11,
   "followers": 0,
   "stars": 0,
   "projects": 5,
-  "totalContributions": 58,
+  "totalContributions": 64,
   "languages": {
-    "Python": 369293,
+    "TypeScript": 271118,
+    "HTML": 259434,
+    "JavaScript": 142181,
+    "CSS": 54606,
+    "Dockerfile": 1760,
+    "Python": 425533,
+    "MATLAB": 1391,
     "Verilog": 32524,
     "SystemVerilog": 6216,
     "Tcl": 1320,
-    "TypeScript": 271118,
-    "HTML": 252085,
-    "JavaScript": 106510,
-    "CSS": 54606,
-    "Dockerfile": 1760,
     "C++": 2598
   },
   "calendar": [
@@ -1491,9 +1492,18 @@
     {
       "date": "2026-11-25",
       "contributionCount": 0
+    },
+    {
+      "date": "2026-11-26",
+      "contributionCount": 6
     }
   ],
   "repos": [
+    {
+      "name": "GridFault-Lab",
+      "created": "2026-11-26",
+      "url": "https://github.com/Snow-Warrior07/GridFault-Lab"
+    },
     {
       "name": "Inventory-Management-System",
       "created": "2026-05-02",
