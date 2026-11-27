@@ -1,8 +1,12 @@
 {
   "username": "Snow-Warrior07",
   "name": "Abhitesh Shukla",
-  "subtitle": "Mixed-signal Design · Control Systems · Computer Vision",
-  "focus": "SAR conversion · verified RTL · control systems · reproducible experiments",
+  "subtitle": "Electrical Systems · Mixed-signal Design · Intelligent Control",
+  "focus": "Fault diagnosis · SAR conversion · controls · reproducible experiments",
+  "education": "Electrical & Electronics Engineering · IIT Patna · B.Tech 2023–2027",
+  "minor": "Minor in Business Studies · Expected graduation 2027",
+  "portfolio": "https://snow-warrior07.github.io/",
+  "leadership": "https://snow-warrior07.github.io/leadership/",
   "links": [
     {
       "label": "GITHUB",
@@ -15,9 +19,35 @@
     {
       "label": "ACTIVITY",
       "url": "https://github.com/Snow-Warrior07?tab=overview"
+    },
+    {
+      "label": "PORTFOLIO",
+      "url": "https://snow-warrior07.github.io/"
+    },
+    {
+      "label": "LEADERSHIP",
+      "url": "https://snow-warrior07.github.io/leadership/"
     }
   ],
   "projects": [
+    {
+      "repo": "GridFault-Lab",
+      "title": "GRIDFAULT LAB",
+      "category": "POWER SYSTEMS / MACHINE LEARNING",
+      "summary": [
+        "Transmission-line fault diagnosis from RMS and phasor measurements.",
+        "Random Forest, ANFIS and a two-ended electrical locator.",
+        "Browser inference with input checks, uncertainty and abstention."
+      ],
+      "stack": "PYTHON · SCIKIT-LEARN · ANFIS · JAVASCRIPT · NUMPY",
+      "detail": "4 measurement profiles · 10 fault types · synthetic benchmark",
+      "url": "https://github.com/Snow-Warrior07/GridFault-Lab",
+      "demo": "https://snow-warrior07.github.io/GridFault-Lab/",
+      "demoLabel": "Live workbench",
+      "evidence": "https://github.com/Snow-Warrior07/GridFault-Lab/blob/main/results/SUMMARY.md",
+      "evidenceLabel": "Measured results",
+      "latest": true
+    },
     {
       "repo": "traction-aware-amr",
       "title": "TRACTION-AWARE AMR",
@@ -84,8 +114,7 @@
       "stack": "SYSTEMVERILOG · PYTHON · NGSPICE · SKY130 · YOSYS",
       "detail": "8 bits · 100 kS/s model · 7.89 simulated ENOB",
       "url": "https://github.com/Snow-Warrior07/sar-adc-8bit",
-      "evidence": "https://github.com/Snow-Warrior07/sar-adc-8bit/blob/main/report/engineering-report.md",
-      "latest": true
+      "evidence": "https://github.com/Snow-Warrior07/sar-adc-8bit/blob/main/report/engineering-report.md"
     }
   ]
 }

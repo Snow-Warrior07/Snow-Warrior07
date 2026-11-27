@@ -1,31 +1,39 @@
 <!-- Generated from profile.json and verified public GitHub data. -->
 <div align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/header.svg"><img src="assets/header.svg" width="100%" alt="Abhitesh Shukla — Mixed-signal Design · Control Systems · Computer Vision"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/header.svg"><img src="assets/header.svg" width="100%" alt="Abhitesh Shukla — Electrical Systems · Mixed-signal Design · Intelligent Control"></picture>
   <a href="https://github.com/Snow-Warrior07"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/link-github.svg"><img src="assets/link-github.svg" width="105" alt="GITHUB"></picture></a>
   <a href="https://github.com/Snow-Warrior07?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/link-projects.svg"><img src="assets/link-projects.svg" width="105" alt="PROJECTS"></picture></a>
   <a href="https://github.com/Snow-Warrior07?tab=overview"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/link-activity.svg"><img src="assets/link-activity.svg" width="105" alt="ACTIVITY"></picture></a>
+  <a href="https://snow-warrior07.github.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/link-portfolio.svg"><img src="assets/link-portfolio.svg" width="105" alt="PORTFOLIO"></picture></a>
+  <a href="https://snow-warrior07.github.io/leadership/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/link-leadership.svg"><img src="assets/link-leadership.svg" width="105" alt="LEADERSHIP"></picture></a>
 </div>
 
-**Latest project: [8-BIT SAR ADC](https://github.com/Snow-Warrior07/sar-adc-8bit)** · [Engineering evidence](https://github.com/Snow-Warrior07/sar-adc-8bit/blob/main/report/engineering-report.md)
+**Latest project: [GRIDFAULT LAB](https://github.com/Snow-Warrior07/GridFault-Lab)** · [Live workbench](https://snow-warrior07.github.io/GridFault-Lab/) · [Measured results](https://github.com/Snow-Warrior07/GridFault-Lab/blob/main/results/SUMMARY.md)
+
+[Full portfolio](https://snow-warrior07.github.io/) · [Leadership experience](https://snow-warrior07.github.io/leadership/)
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/s01.svg"><img src="assets/s01.svg" width="100%" alt="01 — whoami"></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/whoami.svg"><img src="assets/whoami.svg" width="100%" alt="About Abhitesh: mixed-signal design, verified RTL, control systems and computer vision"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/whoami.svg"><img src="assets/whoami.svg" width="100%" alt="About Abhitesh: Electrical &amp; Electronics Engineering · IIT Patna · B.Tech 2023–2027. Minor in Business Studies · Expected graduation 2027. Power systems, mixed-signal design, controls and computer vision."></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/s02.svg"><img src="assets/s02.svg" width="100%" alt="02 — system map"></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/ecosystem.svg"><img src="assets/ecosystem.svg" width="100%" alt="Project ecosystem: SAR conversion, autonomous systems and visual learning"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/ecosystem.svg"><img src="assets/ecosystem.svg" width="100%" alt="Project ecosystem: power-system fault diagnosis, SAR conversion, autonomous systems and visual learning"></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/s03.svg"><img src="assets/s03.svg" width="100%" alt="03 — projects"></picture>
-<a href="https://github.com/Snow-Warrior07/traction-aware-amr"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/project-01.svg"><img src="assets/project-01.svg" width="100%" alt="TRACTION-AWARE AMR: A virtual warehouse rover with friction-limited dynamics, linear and nonlinear tracking, and traction supervision. ROS 2 integration, a Pico carrier PCB, and reproducible tests."></picture></a>
+<a href="https://github.com/Snow-Warrior07/GridFault-Lab"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/project-01.svg"><img src="assets/project-01.svg" width="100%" alt="GRIDFAULT LAB: Transmission-line fault diagnosis from RMS and phasor measurements. Random Forest, ANFIS and a two-ended electrical locator. Browser inference with input checks, uncertainty and abstention."></picture></a>
 
-<a href="https://github.com/Snow-Warrior07/Satellite_based_tile_segmentation"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/project-02.svg"><img src="assets/project-02.svg" width="100%" alt="SATELLITE TILE SEGMENTATION: Pixel-wise segmentation of high-resolution aerial imagery with a residual U-Net and a dilated bottleneck. Patch extraction, test-time augmentation, and tile reconstruction."></picture></a>
+[Live workbench](https://snow-warrior07.github.io/GridFault-Lab/) · [Measured results](https://github.com/Snow-Warrior07/GridFault-Lab/blob/main/results/SUMMARY.md)
 
-<a href="https://github.com/Snow-Warrior07/VAE-Triage"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/project-03.svg"><img src="assets/project-03.svg" width="100%" alt="VQ-VAE PATHOLOGY TRIAGE: A preprocessing gate for gigapixel pathology imagery. Memory-mapped tiling and VQ-VAE reconstruction error screen patches before expensive downstream segmentation."></picture></a>
+<a href="https://github.com/Snow-Warrior07/traction-aware-amr"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/project-02.svg"><img src="assets/project-02.svg" width="100%" alt="TRACTION-AWARE AMR: A virtual warehouse rover with friction-limited dynamics, linear and nonlinear tracking, and traction supervision. ROS 2 integration, a Pico carrier PCB, and reproducible tests."></picture></a>
 
-<a href="https://github.com/Snow-Warrior07/supplyshield"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/project-04.svg"><img src="assets/project-04.svg" width="100%" alt="SUPPLYSHIELD: Supplier disruption planning with constrained recovery decisions. Compare sourcing policies; verify inventory, capacity and budget. Daily planning and fixed-purchase stress tests on synthetic data."></picture></a>
+<a href="https://github.com/Snow-Warrior07/Satellite_based_tile_segmentation"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/project-03.svg"><img src="assets/project-03.svg" width="100%" alt="SATELLITE TILE SEGMENTATION: Pixel-wise segmentation of high-resolution aerial imagery with a residual U-Net and a dilated bottleneck. Patch extraction, test-time augmentation, and tile reconstruction."></picture></a>
+
+<a href="https://github.com/Snow-Warrior07/VAE-Triage"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/project-04.svg"><img src="assets/project-04.svg" width="100%" alt="VQ-VAE PATHOLOGY TRIAGE: A preprocessing gate for gigapixel pathology imagery. Memory-mapped tiling and VQ-VAE reconstruction error screen patches before expensive downstream segmentation."></picture></a>
+
+<a href="https://github.com/Snow-Warrior07/supplyshield"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/project-05.svg"><img src="assets/project-05.svg" width="100%" alt="SUPPLYSHIELD: Supplier disruption planning with constrained recovery decisions. Compare sourcing policies; verify inventory, capacity and budget. Daily planning and fixed-purchase stress tests on synthetic data."></picture></a>
 
 [Live demo](https://snow-warrior07.github.io/supplyshield/) · [Phase results](https://github.com/Snow-Warrior07/supplyshield/blob/main/planning/phase-results.md)
 
-<a href="https://github.com/Snow-Warrior07/sar-adc-8bit"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/project-05.svg"><img src="assets/project-05.svg" width="100%" alt="8-BIT SAR ADC: Differential SAR conversion with a verified RTL controller. Online SKY130 circuit tests and a calibrated analog model. Static linearity, coherent FFTs and mapped digital timing."></picture></a>
+<a href="https://github.com/Snow-Warrior07/sar-adc-8bit"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/project-06.svg"><img src="assets/project-06.svg" width="100%" alt="8-BIT SAR ADC: Differential SAR conversion with a verified RTL controller. Online SKY130 circuit tests and a calibrated analog model. Static linearity, coherent FFTs and mapped digital timing."></picture></a>
 <p align="center"><a href="https://github.com/Snow-Warrior07?tab=repositories">Explore all repositories ↗</a></p>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/s04.svg"><img src="assets/s04.svg" width="100%" alt="04 — telemetry"></picture>
@@ -34,8 +42,8 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/activity.svg"><img src="assets/activity.svg" width="100%" alt="Actual GitHub contribution activity over the past 90 days"></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/s05.svg"><img src="assets/s05.svg" width="100%" alt="05 — the route"></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/timeline.svg"><img src="assets/timeline.svg" width="100%" alt="Repository milestones from February 2025 to October 2026"></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/approach.svg"><img src="assets/approach.svg" width="100%" alt="Engineering approach: model dynamics, tile large images, inspect learning pipelines"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/timeline.svg"><img src="assets/timeline.svg" width="100%" alt="Repository milestones from February 2025 to November 2026"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/approach.svg"><img src="assets/approach.svg" width="100%" alt="Engineering approach: respect measurements, model dynamics, tile large images, inspect learning pipelines"></picture>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/s06.svg"><img src="assets/s06.svg" width="100%" alt="06 — stack"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/dark/stack.svg"><img src="assets/stack.svg" width="100%" alt="Technical stack used in the featured repositories"></picture>
@@ -44,10 +52,16 @@
 <details>
 <summary>Text version · project index</summary>
 
-**Abhitesh Shukla** — Mixed-signal Design · Control Systems · Computer Vision.
+**Abhitesh Shukla** — Electrical Systems · Mixed-signal Design · Intelligent Control.
 
-I build mixed-signal models, verified RTL, autonomous-system simulations and learning pipelines.
+Electrical & Electronics Engineering · IIT Patna · B.Tech 2023–2027. Minor in Business Studies · Expected graduation 2027.
 
+I build fault-diagnosis tools, mixed-signal models, verified RTL, autonomous-system simulations and learning pipelines.
+
+[Full portfolio](https://snow-warrior07.github.io/) · [Leadership experience](https://snow-warrior07.github.io/leadership/).
+
+- [GRIDFAULT LAB](https://github.com/Snow-Warrior07/GridFault-Lab) — Transmission-line fault diagnosis from RMS and phasor measurements. Random Forest, ANFIS and a two-ended electrical locator. Browser inference with input checks, uncertainty and abstention.
+  PYTHON · SCIKIT-LEARN · ANFIS · JAVASCRIPT · NUMPY
 - [TRACTION-AWARE AMR](https://github.com/Snow-Warrior07/traction-aware-amr) — A virtual warehouse rover with friction-limited dynamics, linear and nonlinear tracking, and traction supervision. ROS 2 integration, a Pico carrier PCB, and reproducible tests.
   PYTHON · C++ · ROS 2 · GAZEBO · KICAD
 - [SATELLITE TILE SEGMENTATION](https://github.com/Snow-Warrior07/Satellite_based_tile_segmentation) — Pixel-wise segmentation of high-resolution aerial imagery with a residual U-Net and a dilated bottleneck. Patch extraction, test-time augmentation, and tile reconstruction.

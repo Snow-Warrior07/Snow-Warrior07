@@ -85,6 +85,7 @@ async function collect() {
 }
 
 const data = offline ? JSON.parse(await fs.readFile(cacheFile, 'utf8')) : await collect();
+data.projects = config.projects.length;
 if (!offline) {
   await fs.mkdir(path.dirname(cacheFile), { recursive: true });
   await fs.writeFile(cacheFile, JSON.stringify(data, null, 2) + '\n');
@@ -116,7 +117,7 @@ for (const [theme, c] of Object.entries(themes)) {
     text(48, 214, config.subtitle, 19) + mono(48, 277, 'FOCUS ▸', 11) + text(150, 277, config.focus, 13, c.muted) +
     text(48, 306, 'from models and signals to systems that move.', 14, c.muted) +
     line(48, 352, 952, 352, c.fg) +
-    mono(48, 383, 'MIXED-SIGNAL DESIGN', 11) + mono(360, 383, 'CONTROL + VISION', 11) + mono(952, 383, 'BUILD · TEST · ITERATE', 11, c.muted, 'text-anchor="end"'),
+    mono(48, 383, 'POWER + MIXED-SIGNAL', 11) + mono(360, 383, 'CONTROL + VISION', 11) + mono(952, 383, 'BUILD · TEST · ITERATE', 11, c.muted, 'text-anchor="end"'),
     `${config.name}. ${config.subtitle}. ${config.focus}.`);
 
   for (const [index, label] of ['WHOAMI', 'SYSTEM MAP', 'PROJECTS', 'TELEMETRY', 'THE ROUTE', 'STACK'].entries()) {
@@ -127,21 +128,23 @@ for (const [theme, c] of Object.entries(themes)) {
       `${String(index + 1).padStart(2, '0')} — ${label.toLowerCase()}`);
   }
 
-  await svg('whoami.svg', 250,
-    text(48, 34, 'I build circuits, control systems and learning pipelines.', 17) +
-    text(48, 66, 'Verified SAR logic. Online analog simulation. Reproducible experiments.', 16) +
-    text(48, 100, 'The common thread: understand the model, test the assumptions, inspect the results.', 14, c.muted) +
-    line(48, 130, 952, 130) +
-    mono(48, 168, 'FOCUS', 11) + text(180, 168, 'Mixed-signal design · RTL verification · controls · computer vision', 14) +
-    mono(48, 202, 'BUILDING', 11) + text(180, 202, 'SAR conversion, traction-aware autonomy and visual learning', 14) +
-    mono(48, 236, 'APPROACH', 11) + text(180, 236, 'Simulation · reproducible experiments · inspectable engineering', 14),
-    'About Abhitesh: mixed-signal conversion, verified RTL, controls and computer vision.');
+  await svg('whoami.svg', 300,
+    text(48, 34, config.education, 17) +
+    text(48, 66, config.minor, 15, c.muted) +
+    text(48, 112, 'I build circuits, fault-diagnosis tools, control systems and learning pipelines.', 16) +
+    text(48, 144, 'Understand the model, test the assumptions, inspect the results.', 14, c.muted) +
+    line(48, 171, 952, 171) +
+    mono(48, 207, 'FOCUS', 11) + text(180, 207, 'Power systems · mixed-signal design · controls · computer vision', 14) +
+    mono(48, 241, 'BUILDING', 11) + text(180, 241, 'GridFault Lab, SAR conversion and traction-aware autonomy', 14) +
+    mono(48, 275, 'APPROACH', 11) + text(180, 275, 'Simulation · reproducible experiments · inspectable engineering', 14),
+    `${config.education}. ${config.minor}. Power systems, mixed-signal design, controls and computer vision.`);
 
   let ecosystem = title('SYSTEM MAP — ONE ENGINEERING MINDSET', 'FIG. 01');
   ecosystem += panel(335, 70, 330, 95) + mono(500, 107, 'ABHITESH.SYS', 18, c.fg, 'text-anchor="middle"') + text(500, 137, 'model → build → measure', 13, c.muted, 'text-anchor="middle"');
-  const centers = [190, 500, 810];
-  ecosystem += line(500, 165, 500, 202) + line(190, 202, 810, 202);
+  const centers = [161, 387, 613, 839];
+  ecosystem += line(500, 165, 500, 202) + line(centers[0], 202, centers.at(-1), 202);
   const nodes = [
+    ['POWER SYSTEMS', 'GridFault Lab', 'measurements + faults', 'RF + ANFIS + physics', 'synthetic benchmark'],
     ['MIXED-SIGNAL', '8-bit SAR ADC', 'charge + decisions', 'SystemVerilog + SKY130', 'online circuits + verification'],
     ['AUTONOMY', 'traction-aware-amr', 'motion + estimation', 'PI / LQR / nonlinear control', 'ROS 2 + simulation + PCB'],
     ['VISION', 'segmentation + VQ-VAE', 'pixels + representation', 'Residual U-Net + VQ-VAE', 'tiling + learning + inference']
@@ -149,24 +152,29 @@ for (const [theme, c] of Object.entries(themes)) {
   nodes.forEach((node, i) => {
     const x = centers[i];
     ecosystem += line(x, 202, x, 249, c.fg, 'class="flow"') + circle(x, 202, 4) +
-      mono(x, 243, node[0], 11, c.muted, 'text-anchor="middle"') + panel(x - 139, 265, 278, 170) +
-      text(x, 303, node[1], 15, c.fg, 'text-anchor="middle"') + text(x, 331, node[2], 13, c.muted, 'text-anchor="middle"') +
-      line(x - 119, 352, x + 119, 352) + text(x, 382, node[3], 11, c.fg, 'text-anchor="middle"') + text(x, 408, node[4], 11, c.muted, 'text-anchor="middle"') +
+      mono(x, 243, node[0], 11, c.muted, 'text-anchor="middle"') + panel(x - 104, 265, 208, 170) +
+      text(x, 303, node[1], 14, c.fg, 'text-anchor="middle"') + text(x, 331, node[2], 12, c.muted, 'text-anchor="middle"') +
+      line(x - 89, 352, x + 89, 352) + text(x, 382, node[3], 10, c.fg, 'text-anchor="middle"') + text(x, 408, node[4], 10, c.muted, 'text-anchor="middle"') +
       line(x, 435, x, 475, c.fg, 'class="flow"');
   });
-  ecosystem += line(190, 475, 810, 475) + line(500, 475, 500, 506, c.fg, 'class="flow"') +
+  ecosystem += line(centers[0], 475, centers.at(-1), 475) + line(500, 475, 500, 506, c.fg, 'class="flow"') +
     panel(250, 506, 500, 61) + mono(500, 543, 'SIMULATE · TRAIN · EVALUATE · REPEAT', 13, c.fg, 'text-anchor="middle"') +
     circle(292, 598, 3, c.fg, 'class="pulse"') + mono(310, 602, 'DASHED LINES — IDEAS IN MOTION', 10);
-  await svg('ecosystem.svg', 630, ecosystem, 'Mixed-signal conversion, robotics and computer vision connect through reproducible experimentation.');
+  await svg('ecosystem.svg', 630, ecosystem, 'Power-system fault diagnosis, mixed-signal conversion, robotics and computer vision connect through reproducible experimentation.');
 
-  const glyph = (index, x, y) => {
-    if (index === 4) {
+  const glyph = (repo, x, y) => {
+    if (repo === 'GridFault-Lab') {
+      let signal = panel(x, y, 90, 82);
+      for (let j = 0; j < 3; j++) signal += `<path d="M${x + 10} ${y + 18 + j * 23} h15 l8 -8 l12 16 l10 -8 h25" fill="none" stroke="${j === 0 ? c.fg : c.muted}" stroke-width="1.5"/>`;
+      return signal;
+    }
+    if (repo === 'sar-adc-8bit') {
       let pins = '';
       for (let j = 0; j < 4; j++) pins += line(x - 8, y + 12 + j * 18, x + 8, y + 12 + j * 18, c.fg) + line(x + 80, y + 12 + j * 18, x + 96, y + 12 + j * 18, c.fg);
       return panel(x + 8, y, 72, 82) + pins + mono(x + 44, y + 38, 'SAR', 13, c.fg, 'text-anchor="middle"') + text(x + 44, y + 60, '8 BIT', 12, c.muted, 'text-anchor="middle"');
     }
-    if (index === 0) return panel(x, y + 19, 80, 53) + circle(x + 13, y + 77, 9, c.bg, `stroke="${c.fg}"`) + circle(x + 67, y + 77, 9, c.bg, `stroke="${c.fg}"`) + line(x + 40, y + 19, x + 40, y) + circle(x + 40, y - 3, 5) + line(x + 16, y + 44, x + 28, y + 44, c.fg) + line(x + 52, y + 44, x + 64, y + 44, c.fg);
-    if (index === 1) {
+    if (repo === 'traction-aware-amr') return panel(x, y + 19, 80, 53) + circle(x + 13, y + 77, 9, c.bg, `stroke="${c.fg}"`) + circle(x + 67, y + 77, 9, c.bg, `stroke="${c.fg}"`) + line(x + 40, y + 19, x + 40, y) + circle(x + 40, y - 3, 5) + line(x + 16, y + 44, x + 28, y + 44, c.fg) + line(x + 52, y + 44, x + 64, y + 44, c.fg);
+    if (repo === 'Satellite_based_tile_segmentation') {
       let result = '';
       for (let r = 0; r < 4; r++) for (let col = 0; col < 4; col++) result += rect(x + col * 22, y + r * 22, 18, 18, (r + col) % 3 === 0 ? c.fg : (r + col) % 3 === 1 ? c.line : c.faint);
       return result;
@@ -177,7 +185,7 @@ for (const [theme, c] of Object.entries(themes)) {
     let body = mono(48, 28, `${String(i + 1).padStart(2, '0')} / ${project.category}`, 10) +
       text(48, 70, project.title, 26, c.fg, 'letter-spacing="-.5"') + mono(946, 31, 'VIEW REPOSITORY ↗', 10, c.muted, 'text-anchor="end"');
     project.summary.forEach((copy, j) => { body += text(48, 110 + j * 25, copy, 15, j === 0 ? c.fg : c.muted); });
-    body += glyph(i, 834, 93) + text(48, 201, project.detail, 12, c.muted) + mono(48, 235, project.stack, 10) + line(48, 261, 952, 261);
+    body += glyph(project.repo, 834, 93) + text(48, 201, project.detail, 12, c.muted) + mono(48, 235, project.stack, 10) + line(48, 261, 952, 261);
     await svg(`project-0${i + 1}.svg`, 282, body, `${project.title}. ${project.summary.join(' ')} ${project.stack}.`);
   }
 
@@ -189,7 +197,7 @@ for (const [theme, c] of Object.entries(themes)) {
     if (i < 3) telemetry += line(x + 208, 114, x + 232, 114, c.fg, 'class="flow"');
   });
   telemetry += line(48, 190, 952, 190) +
-    mono(48, 221, 'CURRENT FOCUS', 11) + text(48, 255, 'SAR conversion and verified RTL', 18) + text(48, 284, 'with control systems and learning.', 18) +
+    mono(48, 221, 'CURRENT FOCUS', 11) + text(48, 255, 'Measurement-aware fault diagnosis', 18) + text(48, 284, 'with circuits, controls and learning.', 18) +
     mono(566, 221, 'FEEDBACK, ALWAYS', 11) +
     `<path d="M566 263 H620 L641 245 L660 278 L688 231 L712 285 L734 254 H765 L787 270 L811 242 L835 273 H952" fill="none" stroke="${c.fg}" stroke-width="2"/>` +
     circle(845, 273, 4, c.fg, 'class="pulse"') + rect(700, 233, 1, 57, c.line, 'class="scan"');
@@ -242,19 +250,21 @@ for (const [theme, c] of Object.entries(themes)) {
     ['FEB 2025', 'GitHub begins', 'First step into the open.'],
     ['MAY 2026', 'Project scaffolds', 'Stocks + inventory.'],
     ['SEP 2026', 'Vision pipelines', 'Satellite tiles + VQ-VAE.'],
-    ['OCT 2026', 'Autonomous systems', 'Traction-aware rover.']
+    ['OCT 2026', 'Circuits + control', 'SAR ADC + virtual rover.'],
+    ['NOV 2026', 'GridFault Lab', 'Measurements → diagnosis.']
   ];
-  timeline += line(100, 105, 880, 105, c.fg, 'class="flow"');
+  timeline += line(100, 105, 900, 105, c.fg, 'class="flow"');
   milestones.forEach(([date, label, detail], i) => {
-    const x = 100 + i * 260;
-    timeline += mono(x, 80, date, 11, c.fg, 'text-anchor="middle"') + circle(x, 105, 5, c.bg, `stroke="${c.fg}" stroke-width="2" ${i === 3 ? 'class="pulse"' : ''}`) +
+    const x = 100 + i * 200;
+    timeline += mono(x, 80, date, 11, c.fg, 'text-anchor="middle"') + circle(x, 105, 5, c.bg, `stroke="${c.fg}" stroke-width="2" ${i === milestones.length - 1 ? 'class="pulse"' : ''}`) +
       text(x, 145, label, 14, c.fg, 'text-anchor="middle"') + text(x, 174, detail, 11, c.muted, 'text-anchor="middle"');
   });
-  timeline += text(48, 216, 'From early repositories to learning pipelines and virtual machines.', 12, c.muted);
-  await svg('timeline.svg', 246, timeline, 'GitHub account created February 2025. Stock and inventory repositories created May 2026. Vision repositories created September 2026. Robotics repository created October 2026.');
+  timeline += text(48, 216, 'From early repositories to circuits, autonomous systems and fault diagnosis.', 12, c.muted);
+  await svg('timeline.svg', 246, timeline, 'GitHub account created February 2025. Stock and inventory repositories created May 2026. Vision repositories created September 2026. Robotics and SAR ADC repositories created October 2026. GridFault Lab created November 2026.');
 
   let approach = title('HOW I BUILD', 'MODEL → EVIDENCE');
   const practices = [
+    ['POWER', 'Let measurements set the scope.', 'Route RMS and phasor inputs separately; report uncertainty and withhold weak predictions.'],
     ['CONTROL', 'Start with the dynamics.', 'Simulate contact and sensors; compare controller variants under matched conditions.'],
     ['VISION', 'Respect the scale of the data.', 'Tile large images; build multiscale features; reconstruct full-resolution predictions.'],
     ['LEARNING', 'Make the pipeline inspectable.', 'Train representations; examine reconstruction errors; export models for inference.']
@@ -262,13 +272,14 @@ for (const [theme, c] of Object.entries(themes)) {
   practices.forEach(([label, heading, copy], i) => {
     const y = 86 + i * 100;
     approach += mono(48, y, label, 11, c.fg) + text(196, y, heading, 17) + text(196, y + 29, copy, 13, c.muted);
-    if (i < 2) approach += line(48, y + 56, 952, y + 56);
+    if (i < practices.length - 1) approach += line(48, y + 56, 952, y + 56);
   });
-  await svg('approach.svg', 345, approach, 'Project-based engineering approach: model the dynamics, respect image scale, and inspect the learning pipeline.');
+  await svg('approach.svg', 445, approach, 'Project-based engineering approach: respect measurement availability, model the dynamics, respect image scale, and inspect the learning pipeline.');
 
   const stackRows = [
     ['LANGUAGES', 'Python · C++ · SystemVerilog'],
-    ['LEARNING', 'PyTorch · TensorFlow · Keras · VQ-VAE · residual U-Net'],
+    ['LEARNING', 'Scikit-learn · ANFIS · PyTorch · TensorFlow · Keras'],
+    ['POWER', 'RMS + phasors · fault diagnosis · electrical location'],
     ['ROBOTICS', 'ROS 2 · Gazebo · PI / LQR · nonlinear tracking'],
     ['HARDWARE', 'KiCad · ngspice · SKY130 · Yosys · OpenSTA'],
     ['COMPUTE', 'NumPy · memory-mapped tiling · ONNX · Jupyter'],
@@ -280,12 +291,12 @@ for (const [theme, c] of Object.entries(themes)) {
     stack += mono(48, y, label, 11) + text(195, y, value, 15);
     if (i < stackRows.length - 1) stack += line(48, y + 19, 952, y + 19, c.faint);
   });
-  await svg('stack.svg', 295, stack, 'Technologies evidenced in the featured repositories: Python, C++, SystemVerilog, SKY130, Yosys, OpenSTA, PyTorch, TensorFlow, ROS 2, KiCad, ngspice, NumPy, ONNX, GitHub Actions and pytest.');
+  await svg('stack.svg', 339, stack, 'Technologies evidenced in the featured repositories: Python, C++, SystemVerilog, scikit-learn, ANFIS, RMS and phasor fault diagnosis, SKY130, Yosys, OpenSTA, PyTorch, TensorFlow, ROS 2, KiCad, ngspice, NumPy, ONNX, GitHub Actions and pytest.');
 
   await svg('footer.svg', 165,
     line(48, 34, 952, 34, c.fg) + circle(55, 80, 4, c.fg, 'class="pulse"') + mono(74, 84, 'STATUS — BUILDING, TESTING, ITERATING', 11, c.fg) +
     text(48, 118, 'Models become useful when they meet the world.', 14, c.muted) + mono(952, 118, '@SNOW-WARRIOR07', 10, c.muted, 'text-anchor="end"') +
-    mono(48, 151, 'MIXED-SIGNAL / CONTROL / VISION', 9, c.dim) + mono(952, 151, 'END OF FILE ↗', 9, c.dim, 'text-anchor="end"'),
+    mono(48, 151, 'POWER / MIXED-SIGNAL / CONTROL / VISION', 9, c.dim) + mono(952, 151, 'END OF FILE ↗', 9, c.dim, 'text-anchor="end"'),
     'Status: building, testing, iterating. Abhitesh Shukla, Snow-Warrior07.');
 
   for (const link of config.links) {
@@ -304,16 +315,18 @@ const readme = `<!-- Generated from profile.json and verified public GitHub data
   ${navigation}
 </div>
 
-${config.projects.filter(project => project.latest || (!config.projects.some(item => item.latest) && project.demo)).map(project => `**Latest project: [${project.title}](${project.url})** · [Engineering evidence](${project.evidence || project.url})`).join('\n')}
+${config.projects.filter(project => project.latest || (!config.projects.some(item => item.latest) && project.demo)).map(project => `**Latest project: [${project.title}](${project.url})**${project.demo ? ` · [${project.demoLabel || 'Live demo'}](${project.demo})` : ''} · [${project.evidenceLabel || 'Engineering evidence'}](${project.evidence || project.url})`).join('\n')}
+
+[Full portfolio](${config.portfolio}) · [Leadership experience](${config.leadership})
 
 ${picture('s01', '01 — whoami')}
-${picture('whoami', 'About Abhitesh: mixed-signal design, verified RTL, control systems and computer vision')}
+${picture('whoami', `About Abhitesh: ${config.education}. ${config.minor}. Power systems, mixed-signal design, controls and computer vision.`)}
 
 ${picture('s02', '02 — system map')}
-${picture('ecosystem', 'Project ecosystem: SAR conversion, autonomous systems and visual learning')}
+${picture('ecosystem', 'Project ecosystem: power-system fault diagnosis, SAR conversion, autonomous systems and visual learning')}
 
 ${picture('s03', '03 — projects')}
-${config.projects.map((project, i) => `<a href="${project.url}">${picture(`project-0${i + 1}`, `${project.title}: ${project.summary.join(' ')}`)}</a>${project.demo ? `\n\n[Live demo](${project.demo}) · [Phase results](${project.evidence})` : ''}`).join('\n\n')}
+${config.projects.map((project, i) => `<a href="${project.url}">${picture(`project-0${i + 1}`, `${project.title}: ${project.summary.join(' ')}`)}</a>${project.demo ? `\n\n[${project.demoLabel || 'Live demo'}](${project.demo}) · [${project.evidenceLabel || 'Phase results'}](${project.evidence})` : ''}`).join('\n\n')}
 <p align="center"><a href="https://github.com/${config.username}?tab=repositories">Explore all repositories ↗</a></p>
 
 ${picture('s04', '04 — telemetry')}
@@ -322,8 +335,8 @@ ${picture('github-stats', 'GitHub statistics and source language distribution, r
 ${picture('activity', 'Actual GitHub contribution activity over the past 90 days')}
 
 ${picture('s05', '05 — the route')}
-${picture('timeline', 'Repository milestones from February 2025 to October 2026')}
-${picture('approach', 'Engineering approach: model dynamics, tile large images, inspect learning pipelines')}
+${picture('timeline', 'Repository milestones from February 2025 to November 2026')}
+${picture('approach', 'Engineering approach: respect measurements, model dynamics, tile large images, inspect learning pipelines')}
 
 ${picture('s06', '06 — stack')}
 ${picture('stack', 'Technical stack used in the featured repositories')}
@@ -334,7 +347,11 @@ ${picture('footer', 'Current status: building, testing, iterating')}
 
 **${config.name}** — ${config.subtitle}.
 
-I build mixed-signal models, verified RTL, autonomous-system simulations and learning pipelines.
+${config.education}. ${config.minor}.
+
+I build fault-diagnosis tools, mixed-signal models, verified RTL, autonomous-system simulations and learning pipelines.
+
+[Full portfolio](${config.portfolio}) · [Leadership experience](${config.leadership}).
 
 ${config.projects.map(project => `- [${project.title}](${project.url}) — ${project.summary.join(' ')}\n  ${project.stack}`).join('\n')}
 
